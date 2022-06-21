@@ -1,0 +1,489 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: .8px;
+    transition: .3s;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+header{
+    width: 100%;
+    height: 65px;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 15;
+}
+.headerContiner{
+    width: calc(100% - 8rem);
+    margin: 0 auto;
+    padding: 5px 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.headerContiner .right{
+    display: flex;
+}
+.headerContiner .divIcon{
+    width: 65px;
+    height: 50px;
+}
+.headerContiner img{
+    width: 100%;
+    height: 100%;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    margin:20px 60px 0 0;
+    list-style-type: none;
+    font: 600 14px Iran-Yekan;
+    color: #464749 ;
+    position: relative;
+}
+nav ul:nth-child(1)::after{
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    width: 80px;
+    height: 4px;
+    border-radius: 2px;
+    background-color:#466FB5 ;
+}
+.headerContiner .leftButtons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.headerContiner .leftButtons .fa-basket-shopping{
+    font-size: 30px;
+    color: #604BE3;
+
+}
+.headerContiner .leftButtons a:nth-child(1){
+    position: relative;
+}
+.headerContiner .leftButtons a:nth-child(1)::after{
+    content: "0";
+    position: absolute;
+    right: 0;
+    top: 70%;
+    font-size: 10px;
+    padding: 3px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+.headerContiner .leftButtons a:nth-child(2){
+    display: flex;
+    justify-content: center;
+    font: 15px Iran-Yekan;
+    color: #ffffff;
+    background-color: #604BE3;
+    padding:12px 20px ;
+    border-radius: 9px;
+}
+.headerContiner .leftButtons .fa-user-lock{
+    position: relative;
+    top: 2.5px;
+    font-size: 18px;
+    margin-left: 5px;
+}
+main .firtInfoSection{
+    background: url(../image/Sample-10-3.png) center/cover  no-repeat;
+    height: calc(100vh - 65px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 90px;
+}
+main .firtInfoSection h3{
+    font: 33px/120px YekanBakhBold;
+}
+main .firtInfoSection h4{
+    font: 18px Iran-Yekan;
+}
+main .firtInfoSection a{
+    width: 180px;
+    text-align: center;
+    vertical-align: center;
+    font: 16px Iran-Yekan;
+    color: #ffffff;
+    background-color: #604BE3;
+    margin-top: 40px;
+    padding:15px 20px ;
+    border-radius: 9px;
+}
+main .firtInfoSection a:hover{
+    background: #7266be;
+}
+main .blank{
+    height: 60px;
+}
+main .courseSection{
+    background: #F3F3F3;
+    padding-top:80px ;
+}
+main .coursesContiner{
+    width: calc(100% - 10rem) ;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+main .coursesContiner h2{
+    font: 800 28px YekanBakhBold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+main .coursesContiner .courses{
+    display: grid;
+    grid-template-columns: repeat(3 , auto);
+    row-gap: 20px;
+}
+main .coursesContiner .courses .course{
+    width: 390.98px;
+    height: 403.75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    border-radius: 10px;
+    transition:transform .3s;
+}
+main .coursesContiner .courses .course:hover{
+    transform: translateY(-5px);
+}
+main .coursesContiner .courses .course .courseImage{
+    width: 360px;
+    height: 207px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 2px 0px 5px 0px rgba(187, 187, 187, 0.441);
+    position: relative;
+}
+main .coursesContiner .courses .course .nodeJs{
+    background:url(../image/nodejs.png) center/cover no-repeat;
+}
+main .coursesContiner .courses .course .courseImage a{
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    display: inline-block;
+    margin: 4px;
+    padding-left: 6px;
+    border-radius: 50%;
+    background: rgba(59, 59, 59, 0.53) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+main .coursesContiner .courses .course .courseImage a .fa-user-plus{
+    font-size: 20px;
+}
+main .coursesContiner .courses .course .courseImage a:hover{
+    background: #c9c9c9ab;
+}
+main .coursesContiner .courses .course .courseImage a:hover .fa-user-plus{
+    color: rgba(28, 28, 28, 0.544);
+}
+main .coursesContiner .courses .course .mainContent {
+    width: 360px;
+    height: 120px;
+    padding: 15px 10px;
+    background: #ffffff;
+    border-bottom: .5px solid #d4d4d4;
+    box-shadow: 2px 0px 5px 0px rgba(187, 187, 187, 0.441);
+
+}
+main .coursesContiner .courses .course .mainContent a{
+    display: block;
+    width: 100%;
+    height: 60px;
+    font: 18px Iran-Yekan;
+    color: #464749;
+}
+main .coursesContiner .courses .course .mainContent .subMainContent{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+main .coursesContiner .courses .course .mainContent .subMainContent span{
+    color: #6C757D;
+    font: 12px Iran-Yekan;
+}
+main .coursesContiner .courses .course .mainContent .subMainContent div:first-child i{
+    font-size: 15px;
+    color: rgb(232, 151, 0);
+}
+main .coursesContiner .courses .course .mainContent .subMainContent div:last-child i{
+    font-size: 15px;
+    color: #464749;
+    position: relative;
+    top: 4px;
+    left:3px;
+}
+main .coursesContiner .courses .course .bottomContent{
+    width: 360px;
+    height:auto;
+    padding: 20px 10px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 2px 2px 5px 0px rgba(187, 187, 187, 0.441);
+}
+main .coursesContiner .courses .course .bottomContent div:first-child i{
+    font-size: 22px;
+    color: #464749;
+}
+main .coursesContiner .courses .course .bottomContent div:first-child span{
+    font-size: 18px;
+    color: #464749;
+    margin-right: 5px;
+}
+main .coursesContiner .courses .course .bottomContent div:last-child p{
+    font-size: 18px;
+    color: #464749;
+    margin-left: 5px;
+}
+main .coursesContiner .courses .course .courseImage .discount{
+    background: url(../image/discont_badge.png) center/cover no-repeat;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: -8px;
+    left: -14px;
+    transform: rotate(-30deg);
+    text-align: center;
+    padding-top: 12px;
+}
+main .coursesContiner .courses .course .courseImage .discount p:first-child{
+    font: 13px/17px Iran-Yekan;
+    color: #ffffff;
+}
+main .coursesContiner .courses .course .courseImage .discount p:last-child{
+    font: 11px Iran-Yekan;
+    color: #ffffff;
+}
+main .coursesContiner .courses .course :hover .discount{
+    transform: rotate(0deg);
+}
+main .coursesContiner .courses .course .price{
+    display: inline-block;
+}
+main .coursesContiner .courses .course .GIT{
+    background:url(../image/git.png) center/cover no-repeat;
+}
+main .coursesContiner .courses .course .react-redux{
+    background:url(../image/react\ redux.png) center/cover no-repeat;
+}
+main .coursesContiner .courses .course .javascript{
+    background:url(../image/javascript-500x286.png) center/cover no-repeat;
+}
+main .coursesContiner .courses .course .sass{
+    background:url(../image/SASS-500x286.png) center/cover no-repeat;
+}
+main .coursesContiner .courses .course .priceSass{
+    text-decoration: line-through;
+}
+main .coursesContiner .courses .course .htmlCss{
+    background:url(../image/Html_Css-500x286.png) center/cover no-repeat;
+}
+main .papersSection{
+    background: #F3F3F3;
+    padding-top:80px ;
+}
+main .papersSection .papersContiner{
+    width: calc(100% - 10rem) ;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .papersSection .papersContiner .papersHeader{
+    margin-bottom: 80px;
+    font-family: iranyekanwebregular;
+}
+main .papersSection .papersContiner .papers{
+    display: flex;
+}
+main .papersSection .papersContiner .papers .papersRight{
+    width: 69%;
+    position: relative;
+}
+main .papersSection .papersContiner .papers .papersRight .whyNodeJs{
+    background: url(../image/whaynodejs.png) center/cover no-repeat;
+    filter: brightness(60%);
+    width: 756px;
+    height:505px;
+    border-radius: 10px;
+}
+main .papersSection .papersContiner .papers .hoverColor::after{
+    content: "";
+    display: inline-block;
+    background-color: #644fef7b;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .5s;
+}
+main .papersSection .papersContiner .papers .hoverColor:hover::after{
+    opacity: 1;
+}
+main .papersSection .papersContiner .papers .papersRight .title{
+    width: 60%;
+    height: 130px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 37px;
+    position: absolute;
+    top: 340px ;
+    right: -30px;
+    box-shadow: 2px 1px 15px rgba(129, 129, 129, 0.441);
+    font: 12px/30px iranyekanwebmedium;
+    color: #464749;
+    transition: .5s;
+}
+main .papersSection .papersContiner .papers .papersRight:hover .whyNodeJs{
+    filter: brightness(100%);
+}
+main .papersSection .papersContiner .papers .papersRight:hover .title{
+    transform: translateY(-5px);
+}
+main .papersSection .papersContiner .papers .papersLeft{
+    width: 30%;
+    height: 507px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+main .papersSection .papersContiner .papers .papersLeft .paperLeft{
+    position: relative;
+}
+main .papersSection .papersContiner .papers .papersLeft .reactpapers{
+    width: 378px;
+    height: 239px;
+    border-radius: 13px;
+   filter: brightness(60%);
+}
+main .papersSection .papersContiner .papers .papersLeft .title{
+    width: 80%;
+    height: 40px;
+    position: absolute;
+    top:130px ;
+    right: 15px;
+    font: 18px/30px Iran-Yekan;
+    color: #ffffff;
+    transition: .5s;
+}
+main .papersSection .papersContiner .papers .papersLeft .title a{
+    font-size: 14px;
+    padding: 7px;
+    background-color: #0000009f;
+    border-radius: 5px;
+}
+main .papersSection .papersContiner .papers .paperLeft:hover .title{
+    transform: translateY(-5px);
+}
+main .papersSection .papersContiner .papers .paperLeft:hover .reactpapers{
+    filter: brightness(100%);
+}
+main .papersSection .papersContiner .papers .papersLeft .reactLibraries{
+    background: url(../image/react-410x259.jpg) center/cover no-repeat;
+}
+main .papersSection .papersContiner .papers .papersLeft .reactComponent{
+    background: url(../image/reactjs-components_6093-410x259.jpg) center/cover no-repeat;
+}
+main .falowOurPage{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding: 80px;
+    background-color: #F3F3F3;
+    font-family: iranyekanwebregular;
+
+}
+footer{
+    background: #B6B3B3;
+}
+footer .footerContiner{
+    width: calc(100vw - 8rem);
+    margin: 0 auto;
+    padding: 60px 0;
+    /* display: flex;
+    justify-content: space-between;
+    gap: 15px; */
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+footer .footerContiner h3{
+    font: 23px Iran-Yekan;
+    color: #464749;
+    position: relative;
+}
+footer .footerContiner h3::after{
+    content: "";
+    display: inline-block;
+    margin-right: 4px;
+    width: 30px;
+    height: 3px;
+    background: #644fef;
+}
+footer .footerContiner p , .Reserved p{
+    margin-top: 20px;
+    font: 15px/40px Iran-Yekan;
+    color: #464749;
+    width: 400px;
+}
+footer .footerContiner .spacialList .List{
+    display: flex;
+    gap: 80px;
+}
+footer .footerContiner .spacialList .List ul{
+    list-style-type: none;
+    color: #464749;
+    font: 14px/35px Iran-Yekan;
+    margin-top: 20px;
+}
+footer .footerContiner .spacialList .List ul li{
+    display: block;
+    position: relative;
+    transition: .3s;
+}
+footer .footerContiner .spacialList .List ul li::before{
+    content: "";
+    position: absolute;
+    top: 49%;
+    right: -25px;
+    width: 20px;
+    height: 1px;
+    border-radius: 3px;
+    background: #ffffff;
+    transform: scaleX(0);
+    transition: .2s;
+}
+footer .footerContiner .spacialList .List ul li:hover{
+    transform: translateX(-21px);
+}
+footer .footerContiner .spacialList .List ul li:hover::before{
+    transform: scaleX(1);
+    transform-origin: center;
+}
+footer .Reserved {
+    width: 100;
+    padding: 30px;
+    margin-top: 40px;
+    background: #A8A5A5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .Reserved .fa-brands{
+    font-size: 35px;
+    color: #464749;
+}
