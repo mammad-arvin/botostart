@@ -500,6 +500,7 @@ footer .Reserved .fa-brands{
     align-items: center;
     margin: 0 auto;
     font: 900 30px YekanBakhBold;
+    color:#ffffff;
     direction: ltr;
 }
 @media(max-width:1270px){
