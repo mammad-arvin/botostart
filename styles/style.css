@@ -486,4 +486,30 @@ footer .Reserved {
 footer .Reserved .fa-brands{
     font-size: 35px;
     color: #464749;
+    margin-right: 15px;
+}
+
+
+                                                /* for media query */
+
+.justdesktop{
+    display: none;
+    width: 50%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font: 900 30px YekanBakhBold;
+    direction: ltr;
+}
+@media(max-width:1270px){
+    header, main,footer{
+        display:none;
+    }
+    .justdesktop{
+        display: flex;
+    }
+    body{
+        background: #272626;
+    }
 }
